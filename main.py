@@ -165,7 +165,7 @@ f20 = PhotoImage(file=r'img/1.png')
 fondo_lista = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16, f17, f18, f19, f20]
 
 main_window = Frame(root)
-main_window.pack(fill=BOTH, expand=1)
+main_window.pack()
 
 c = calculadora()
 c.inicio()
