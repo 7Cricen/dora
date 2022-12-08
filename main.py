@@ -34,7 +34,7 @@ class calculadora():
     # Botones
     num_pad = [[u"\u00AB", 'C', '=', '+'],
                [7, 8, 9, '-'],
-               [4, 5, 6, 'x'],
+               [4, 5, 6, '*'],
                [1, 2, 3, '/'],
                ['+/-', 0, '.', '%']]
     contador=0
@@ -58,9 +58,9 @@ class calculadora():
         pass
     else:
       # Simbolo
-      if valor in ('+', '-', 'x', '/','%'):
+      if valor in ('+', '-', '*', '/','%'):
         nmr_uno = self.pantalla.get()
-        if nmr_uno[-1] in ('+', '-', 'x', '/'):
+        if nmr_uno[-1] in ('+', '-', '*', '/'):
           pass
         else:
           self.pantalla.insert('end', valor)
